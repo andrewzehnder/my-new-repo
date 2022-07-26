@@ -1,10 +1,21 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AddCourse from './components/AddCourse';
+import CourseList from './components/CourseList';
+import Home from './components/Home'
+import NavBar from './components/NavBar';
 
-function App() {
+
+const  App = () => {
   return (
-    <div className="App">
-     <h1>Hello World</h1>
-    </div>
+    <Router>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/courses" element={<CourseList />} />
+          <Route path="/addcourse" element={<AddCourse />} />
+      </Routes>
+     </Router>
   );
 }
 

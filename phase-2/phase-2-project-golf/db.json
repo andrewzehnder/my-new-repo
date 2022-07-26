@@ -2,12 +2,12 @@
   "courses": [
     {
       "id": 1,
-      "course_name": "Troon North",
+      "course": "Troon North",
       "location": "Scottsdale, AZ",
       "price": "200"
     },
     {
-      "course_name": "Quintero",
+      "course": "Quintero",
       "location": "Peoria, AZ",
       "price": 175,
       "id": 2

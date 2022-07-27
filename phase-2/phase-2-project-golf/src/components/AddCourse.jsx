@@ -1,19 +1,27 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 
 const AddCourse = () => {
     const [course, setCourse] = useState({
-        course: "",
+        name: "",
         location: "",
         price: ""
-    })
+})
 
     const handleSubmit = e => {
-        e.preventDefault()
+        e.preventDefault();
+        fetch('http://localhost:3001/courses', {
+            method: "POST",
+            headers,
+            body: JSON.stringify(course)
+        })
+        .then(resp => resp.json())
+        .then(data => console.log(data)) 
     }
 
     const handleChange = e => {
         setCourse({
-            [e.target.course]: e.target.value
+            ...course,
+            [e.target.name]: e.target.value
         })
     }
 
@@ -23,8 +31,8 @@ const AddCourse = () => {
 
         <form onSubmit={ handleSubmit }>
             <div>
-                <label htmlFor="course">Course: </label>
-                <input type="text" name="course" id="course" value={ course.course } onChange={ handleChange } />
+                <label htmlFor="name">Course Name: </label>
+                <input type="text" name="name" id="name" value={ course.name } onChange={ handleChange } />
             </div>
             <div>
                 <label htmlFor="location">Location: </label>

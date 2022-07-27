@@ -11,7 +11,10 @@ const AddCourse = () => {
         e.preventDefault();
         fetch('http://localhost:3001/courses', {
             method: "POST",
-            headers,
+            headers: {
+                "Accept": "application/json",
+                "Content-Type": "application/json"
+            },
             body: JSON.stringify(course)
         })
         .then(resp => resp.json())

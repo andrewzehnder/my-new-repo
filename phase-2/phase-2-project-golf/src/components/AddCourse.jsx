@@ -60,24 +60,60 @@ const AddCourse = ({ addCourses }) => {
           onChange={ handleChange }
         />
         </div>
+
+        <div>
+        <TextField
+          required
+          id="location"
+          label="Location:"
+          type="text"
+          name="location"
+          value={ course.location } 
+          onChange={ handleChange }
+        />
+        </div>
+
+        <div>
+        <TextField
+          required
+          id="price"
+          label="Price:"
+          type="text"
+          name="price"
+          value={ course.price } 
+          onChange={ handleChange }
+        />
+        </div>
+
+        <div>
+        <TextField
+          required
+          id="website"
+          label="Website URL:"
+          type="text"
+          name="website"
+          value={ course.website } 
+          onChange={ handleChange }
+        />
+        </div>
         </Box>
 
             {/* <div>
                 <label htmlFor="name">Course Name: </label>
                 <input type="text" name="name" id="name" value={ course.name } onChange={ handleChange } />
             </div> */}
-            <div>
+            {/* <div>
                 <label htmlFor="location">Location: </label>
                 <input type="text" name="location" id="location" value={ course.location } onChange={ handleChange } />
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
                 <label htmlFor="price">Price: </label>
                 <input type="text" name="price" id="price" value={ course.price } onChange={ handleChange } />
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
                 <label htmlFor="website">Website URL: </label>
                 <input type="text" name="website" id="website" value={ course.website } onChange={ handleChange } />
-            </div>
+            </div> */}
 
             <input type="submit" value="Add Course" />
 

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
 
 const AddCourse = ({ addCourses }) => {
 
@@ -38,10 +40,32 @@ const AddCourse = ({ addCourses }) => {
         <h1>AddCourse</h1>
 
         <form onSubmit={ handleSubmit }>
-            <div>
+
+        <Box
+            component="form"
+            sx={{
+                '& .MuiTextField-root': { m: 1, width: '25ch' },
+            }}
+            noValidate
+            autoComplete="off"
+        >
+      <div>
+        <TextField
+          required
+          id="name"
+          label="Course Name:"
+          type="text"
+          name="name"
+          value={ course.name } 
+          onChange={ handleChange }
+        />
+        </div>
+        </Box>
+
+            {/* <div>
                 <label htmlFor="name">Course Name: </label>
                 <input type="text" name="name" id="name" value={ course.name } onChange={ handleChange } />
-            </div>
+            </div> */}
             <div>
                 <label htmlFor="location">Location: </label>
                 <input type="text" name="location" id="location" value={ course.location } onChange={ handleChange } />

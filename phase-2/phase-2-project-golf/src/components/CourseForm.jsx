@@ -7,7 +7,9 @@ const CourseForm = ({ course }) => {
 
   return (
     <li>
-      <Link to="#">{ course.course }</Link>
+      <Link to="#">
+        { course.course } | {course.location}
+      </Link>
     </li>
   )
 }

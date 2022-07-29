@@ -1,8 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const CourseForm = () => {
+const CourseForm = ({ course }) => {
+
+  console.log("courseForm", course)
+
   return (
-    <div>CourseForm</div>
+    <li>
+      <Link to="#">{ course.course }</Link>
+    </li>
   )
 }
 

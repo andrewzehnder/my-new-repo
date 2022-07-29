@@ -9,14 +9,8 @@
     {
       "course": "Quintero",
       "location": "Peoria, AZ",
-      "price": 175,
+      "price": "175",
       "id": 2
-    },
-    {
-      "name": "lookout",
-      "location": "phoenix",
-      "price": "100",
-      "id": 3
     }
   ]
 }

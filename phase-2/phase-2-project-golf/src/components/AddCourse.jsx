@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 
-const AddCourse = () => {
+const AddCourse = ({ addCourses }) => {
+
     const [course, setCourse] = useState({
         name: "",
         location: "",
         price: ""
-})
+    })
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -18,7 +19,9 @@ const AddCourse = () => {
             body: JSON.stringify(course)
         })
         .then(resp => resp.json())
-        .then(data => console.log(data)) 
+        .then(data => {
+            addCourses(data)
+        }) 
     }
 
     const handleChange = e => {
@@ -26,7 +29,8 @@ const AddCourse = () => {
             ...course,
             [e.target.name]: e.target.value
         })
-    }
+      }
+
 
   return (
     <div>

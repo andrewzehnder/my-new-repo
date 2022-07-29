@@ -1,16 +1,11 @@
 {
   "courses": [
     {
-      "id": 1,
-      "course": "Troon North",
-      "location": "Scottsdale, AZ",
-      "price": "200"
-    },
-    {
-      "course": "Quintero",
+      "name": "Quintero",
       "location": "Peoria, AZ",
-      "price": "175",
-      "id": 2
+      "price": "200",
+      "website": "https://www.quinterogolf.com/",
+      "id": 1
     }
   ]
 }

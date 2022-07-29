@@ -1,8 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import ImageIcon from '@mui/icons-material/Image';
@@ -22,7 +20,7 @@ const CourseForm = ({ course }) => {
             <ImageIcon />
           </Avatar>
         </ListItemAvatar>
-        <Link to="#">{course.course} | {course.location}</Link>
+        <a href={course.website} target="_blank">{course.name} | {course.location}</a>
       </ListItem>
 
     </List>

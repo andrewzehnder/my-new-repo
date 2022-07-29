@@ -9,6 +9,7 @@ import IconButton from '@mui/material/IconButton';
 
 
 const NavBar = () => {
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">

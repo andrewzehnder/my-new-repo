@@ -5,7 +5,8 @@ const AddCourse = ({ addCourses }) => {
     const [course, setCourse] = useState({
         name: "",
         location: "",
-        price: ""
+        price: "",
+        website: ""
     })
 
     const handleSubmit = e => {
@@ -48,6 +49,10 @@ const AddCourse = ({ addCourses }) => {
             <div>
                 <label htmlFor="price">Price: </label>
                 <input type="text" name="price" id="price" value={ course.price } onChange={ handleChange } />
+            </div>
+            <div>
+                <label htmlFor="website">Website URL: </label>
+                <input type="text" name="website" id="website" value={ course.website } onChange={ handleChange } />
             </div>
 
             <input type="submit" value="Add Course" />

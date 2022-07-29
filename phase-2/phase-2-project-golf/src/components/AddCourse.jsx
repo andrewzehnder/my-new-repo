@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
 
 const AddCourse = ({ addCourses }) => {
 
@@ -115,8 +116,8 @@ const AddCourse = ({ addCourses }) => {
                 <input type="text" name="website" id="website" value={ course.website } onChange={ handleChange } />
             </div> */}
 
-            <input type="submit" value="Add Course" />
-
+            <Button input type="submit" variant="outlined" >Add New Course</Button>
+        
         </form>
 
 

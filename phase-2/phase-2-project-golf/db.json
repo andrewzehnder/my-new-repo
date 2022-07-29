@@ -13,13 +13,6 @@
       "price": "500",
       "website": "www.google.com",
       "id": 2
-    },
-    {
-      "name": "Troon North",
-      "location": "AZ",
-      "price": "500",
-      "website": "www.google.com",
-      "id": 3
     }
   ]
 }

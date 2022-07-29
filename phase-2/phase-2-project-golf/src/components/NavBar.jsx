@@ -24,9 +24,9 @@ const NavBar = () => {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Arizona Golf Course List
           </Typography>
-          <Button color="inherit">Home</Button>
-          <Button color="inherit">Course List</Button>
-          <Button color="inherit">Add Course</Button>
+          <Button color="inherit" component={ Link } to="/">Home</Button>
+          <Button color="inherit" component={ Link } to="/courses">Course List</Button>
+          <Button color="inherit" component={ Link } to="/addcourse">Add Course</Button>
         </Toolbar>
       </AppBar>
     </Box>

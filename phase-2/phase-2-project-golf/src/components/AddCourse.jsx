@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import { useNavigate } from 'react-router-dom';
 
 const AddCourse = ({ addCourses }) => {
 
@@ -12,6 +13,8 @@ const AddCourse = ({ addCourses }) => {
         rating: "",
         website: ""
     })
+
+    const navigate = useNavigate(0);
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -25,7 +28,8 @@ const AddCourse = ({ addCourses }) => {
         })
         .then(resp => resp.json())
         .then(data => {
-            addCourses(data)
+            addCourses(data);
+            navigate('/courses');
         }) 
     }
 

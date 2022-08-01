@@ -16,8 +16,12 @@ const Home = () => {
         height={300}
         width={1200}
         />
-        <h1>Welcome to your complete guide to Arizona Golf!</h1>
-        <h3>This list is built and maintained by golfers like you </h3>
+        <h1>Welcome to your complete guide to Arizona Golf</h1>
+        <h3>
+          <div>This list is built and maintained by golfers like you!</div>
+          <div>- Click on the course list menu option to see our already added and reviewed courses.</div>
+          <div>- Click on the add course menu option to add a new course.</div>
+        </h3>
         
       
     </Div>

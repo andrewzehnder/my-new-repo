@@ -5,8 +5,24 @@
       "location": "Peoria, AZ",
       "price": "200",
       "rating": "9.3",
-      "website": "www.quinterogolf.com",
+      "website": "https://www.quinterogolf.com/",
       "id": 1
+    },
+    {
+      "name": "Troon North",
+      "location": "Scottsdale, AZ",
+      "price": "250",
+      "rating": "8.7",
+      "website": "https://www.troon.com/locations/troon-north-golf-club/",
+      "id": 2
+    },
+    {
+      "name": "Cave Creek Golf Course",
+      "location": "Phoenix, AZ",
+      "price": "79",
+      "rating": "6.1",
+      "website": "https://www.phoenix.gov/parks/golf/phoenix-golf-courses/cave-creek",
+      "id": 3
     }
   ]
 }

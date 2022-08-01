@@ -11,7 +11,15 @@ const Home = () => {
 
   return (
     <Div>
-        <h1>Home Page</h1>
+        <img 
+        src="https://www.quinterogolf.com/wp-content/uploads/2020/03/bkg-hole-1.jpg"
+        height={300}
+        width={1200}
+        />
+        <h1>Welcome to your complete guide to Arizona Golf!</h1>
+        <h3>This list is built and maintained by golfers like you </h3>
+        
+      
     </Div>
   )
 }

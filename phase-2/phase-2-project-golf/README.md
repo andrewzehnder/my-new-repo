@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# phase2-project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Phase 2 Project - Arizona Golf Course List
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+This page is designed to display city information for given postal codes in the United States. To search for a new city, there is a button which will open up a banner with an input text box. Once searched, it will display the information in a card format below. You can add as many cards as you'd like. This will be stored even after page refresh. If you want to remove a card, you can click the remove button as well. Hovering over the header will change the color from black to blue. Hovering over the buttons will also change the style.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To get this page running, you will need to the API JSON server running. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Step 1: Run the following command to setup the JSON server:
+npm install -g json-server
 
-### `npm test`
+Step 2: Start the JSON server using the following command:
+json-server --watch db.json
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+From there, the page should post, update, and delete from the db.json file.
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+From the home page, there may be a few cards already created. To create a new card using the search, click the 'Search a New City' button.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Example Postal Codes include: "77449, 11368, 60629"
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+After searching for a given postal code, you may leave them on the page, or remove using the button. Duplicate searches will not add a 2nd card.
 
-### `npm run eject`
+## Acknowledgement
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+American flag picture used from Alpha Coders (https://www.alphacoders.com): https://images2.alphacoders.com/441/441503.jpg
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Video Walk-Through
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+https://youtu.be/xnmOEA25DfM 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Blog on API JSON Server 
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://medium.com/@azehnder2/adding-items-to-api-json-server-6f515d238c7c 

@@ -9,6 +9,7 @@ const AddCourse = ({ addCourses }) => {
         name: "",
         location: "",
         price: "",
+        rating: "",
         website: ""
     })
 
@@ -82,6 +83,18 @@ const AddCourse = ({ addCourses }) => {
           type="text"
           name="price"
           value={ course.price } 
+          onChange={ handleChange }
+        />
+        </div>
+
+        <div>
+        <TextField
+          required
+          id="rating"
+          label="Rating:"
+          type="text"
+          name="rating"
+          value={ course.rating } 
           onChange={ handleChange }
         />
         </div>

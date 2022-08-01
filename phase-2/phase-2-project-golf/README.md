@@ -29,16 +29,27 @@ Price: 175
 Rating: 7.4
 Website URL: https://www.lookoutmountaingolf.com/
 
-After searching for a given postal code, you may leave them on the page, or remove using the button. Duplicate searches will not add a 2nd card.
+After adding a new golf course, you will be navigating to the course list to see the updated list.
+
+## Requirements
+Make a single page application using create-react-app. 
+- Completed
+Your app should use at least 5 components.
+- Completed (App, Home, Navbar, AddCourse, CourseList, CourseForm)
+There should be at least 3 client-side routes using React Router.
+- Completed (Home, AddCourse, CourseList)
+Use a json-server to create a RESTful API for your backend and make both a GET and POST request.
+- Completed (GET in App, POST in AddCourse)
+Add some styling.
+- Completed (Experimented with Material UI in a number of areas)
 
 ## Acknowledgement
 
-American flag picture used from Alpha Coders (https://www.alphacoders.com): https://images2.alphacoders.com/441/441503.jpg
+Golf course photo from the home page was used from Quintero Golf Club: (https://www.quinterogolf.com/) https://www.quinterogolf.com/wp-content/uploads/2020/03/bkg-hole-1.jpg
 
 ## Video Walk-Through
 
-https://youtu.be/xnmOEA25DfM 
+
 
 ## Blog on API JSON Server 
 
-https://medium.com/@azehnder2/adding-items-to-api-json-server-6f515d238c7c 

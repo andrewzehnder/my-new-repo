@@ -11,6 +11,18 @@ const CourseForm = ({ course }) => {
 
   console.log("courseForm", course)
 
+  const courseTopInfo = [`${course.name} | ${course.location}`]
+  const courseRatingInfo = [`Rating: ${course.rating}`]
+  const coursePriceInfo = [`Price: ${course.price}`]
+
+  const listItemInfo = (
+    <>
+    <div>{courseTopInfo}</div>
+    <div>{courseRatingInfo}</div>
+    <div>{coursePriceInfo}</div>
+    </>
+  )
+
   return (
 
     <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
@@ -20,7 +32,7 @@ const CourseForm = ({ course }) => {
             <ImageIcon />
           </Avatar>
         </ListItemAvatar>
-        <a href={course.website} target="_blank">{course.name} | {course.location}</a>
+          <a href={course.website} target="_blank">{ listItemInfo }</a>
       </ListItem>
 
     </List>

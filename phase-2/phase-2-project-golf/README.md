@@ -4,7 +4,7 @@ Phase 2 Project - Arizona Golf Course List
 
 ## Description
 
-This page is designed to display city information for given postal codes in the United States. To search for a new city, there is a button which will open up a banner with an input text box. Once searched, it will display the information in a card format below. You can add as many cards as you'd like. This will be stored even after page refresh. If you want to remove a card, you can click the remove button as well. Hovering over the header will change the color from black to blue. Hovering over the buttons will also change the style.
+This single page application was created to display and add golf courses and display information about each of them to a webpage visitor. On the top of the page is a navigation bar that will allow you to toggle between the home page, the current course list, and a page to add a new course. Once added, you can navigate to the course list to see the new information. Routing is included so "/" will take you to the home page, "/courses' will take you to the course list, and "/addcourse" will take you to the add course page. This page was created in React.js and uses Material UI.
 
 ## Installation
 
@@ -20,9 +20,14 @@ From there, the page should post, update, and delete from the db.json file.
 
 ## Usage
 
-From the home page, there may be a few cards already created. To create a new card using the search, click the 'Search a New City' button.
+The home page was created as a landing page for information and explaining the web page. There should be a few courses already created for you to view on the Course List page. You can create a new course by navigating to the Add Course Page.
 
-Example Postal Codes include: "77449, 11368, 60629"
+Example Course to Add:
+Name: Lookout Mountain Golf Club
+Location: Phoenix, AZ
+Price: 175
+Rating: 7.4
+Website URL: https://www.lookoutmountaingolf.com/
 
 After searching for a given postal code, you may leave them on the page, or remove using the button. Duplicate searches will not add a 2nd card.
 

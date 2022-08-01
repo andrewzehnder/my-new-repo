@@ -9,8 +9,6 @@ import ImageIcon from '@mui/icons-material/Image';
 
 const CourseForm = ({ course }) => {
 
-  console.log("courseForm", course)
-
   const courseTopInfo = [`${course.name} | ${course.location}`]
   const courseRatingInfo = [`Rating: ${course.rating}`]
   const coursePriceInfo = [`Price: ${course.price}`]

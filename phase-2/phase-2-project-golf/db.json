@@ -23,6 +23,14 @@
       "rating": "6.1",
       "website": "https://www.phoenix.gov/parks/golf/phoenix-golf-courses/cave-creek",
       "id": 3
+    },
+    {
+      "name": "Lookout",
+      "location": "Phoenix, AZ",
+      "price": "100",
+      "rating": "9.3",
+      "website": "https://www.google.com/",
+      "id": 4
     }
   ]
 }
